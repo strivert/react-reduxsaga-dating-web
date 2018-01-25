@@ -1,0 +1,66 @@
+.dashboard__notifications {
+  display: flex;
+  justify-content: space-around;
+  margin: 1.5rem 0;
+
+  .close {
+    float: right;
+  }
+}
+
+.dashboard__notifications__box {
+  position: relative;
+  width: 45%;
+  border: 1px solid $border-blue;
+  background: $notification-background;
+  padding: 0.5rem;
+
+  a {
+    text-decoration: none;
+  }
+
+  .close {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+  }
+
+  .dashboard__notifications__content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .dashboard__notifications__icon {
+    padding: 2.5rem 1.0rem;
+    .icon{
+      width: 3.2rem;
+      height: 3.2rem;
+    }
+  }
+
+  .dashboard__notifications__text {
+    font-weight: 500;
+    text-transform: uppercase;
+    color: $text-blue;
+    text-align: center;
+    margin: auto 2.5rem auto 0;
+    // padding: 3.5rem 1.5rem 2.5rem 0;
+    font-size: 1.6rem;
+  }
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+@media (max-width: $phone-plus-screen + 1) {
+  .dashboard__notifications {
+    display: block;
+  }
+
+  .dashboard__notifications__box {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+}

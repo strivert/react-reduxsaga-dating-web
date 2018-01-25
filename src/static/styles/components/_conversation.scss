@@ -1,0 +1,165 @@
+.messages__conversation {
+  position: relative;
+
+  .member {
+
+    img {
+      width: 7.7rem;
+      height: 7.7rem;
+    }
+
+    .username {
+      font-size: 2.4rem;
+      line-height: 2.4rem;
+      color: $main-blue;
+    }
+  }
+}
+
+.conversation__actions {
+  display: flex;
+  position: absolute;
+  top: 3.7rem;
+  right: 3.2rem;
+}
+
+.actions__delete,
+.actions__reply {
+  width: 4rem;
+  height: 4rem;
+  cursor: pointer;
+}
+
+.actions__delete {
+ background: url("../images/rubbish-bin-delete-button.svg") center 50%/55% no-repeat;
+}
+
+.actions__reply {
+  background: url("../images/back-arrow.svg") center 50%/55% no-repeat;
+}
+
+.conversation__messages {
+  margin: 3.4rem auto 0;
+  width: 90%;
+}
+
+.conversation__message {
+  margin-bottom: 2.5rem;
+
+  .message-date {
+    font-weight: 400;
+    font-size: 1.2rem;
+    line-height: 1.4rem;
+    color: $text-blue;
+    float: right;
+    margin-bottom: 1rem;
+  }
+  .message {
+    display: flex;
+    clear: both;
+
+    .user-avatar {
+      width: 6rem;
+      height: 6rem;
+      border-radius: 50%;
+      margin-right: 1.5rem;
+    }
+
+    .user-message {
+      width: 100%;
+      border-bottom: 1px solid $border-blue;
+      padding-bottom: 1.5rem;
+      align-self: center;
+
+      p {
+        // white-space: pre-line;
+        // margin: 0;
+        text-align: justify;
+        font-weight: 300;
+        font-size: 1.5rem;
+        line-height: 2.2rem;
+      }
+
+      .message-upload {
+        position: relative;
+        margin-top: 2.9rem;
+
+        .upload-actions {
+          position: absolute;
+          top: -.5rem;
+          left: -3.8rem;
+          display: block;
+          width: 3rem;
+          height: 3rem;
+          background: url('../images/more.svg') center 50%/50% no-repeat;
+          cursor: pointer;
+        }
+
+        img {
+          width: 80%;
+          height: auto;
+          border-radius: .5rem;
+        }
+      }
+    }
+  }
+}
+
+.conversation__send {
+  margin: 2rem auto 2rem;
+  width: 90%;
+
+  .message-upload-btn {
+    display: inline-block;
+    width: 5.6rem;
+    height: 5.6rem;
+    background: $active-blue url("../images/photo-camera.svg") center 50%/50% no-repeat;
+    border-radius: 50%;
+    margin-right: $s-size;
+    cursor: pointer;
+  }
+
+  form {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  textarea {
+    flex-grow: 1;
+    height: 10.4rem;
+    margin-bottom: 7rem;
+    outline: none;
+    resize: none;
+    border: 1px solid $border-blue;
+    padding: 1rem;
+    color: #333;
+
+    &::placeholder {
+      color: rgba($active-blue, .7);
+      font-weight: 300;
+      font-size: 1.5rem;
+      line-height: 2.2rem;
+    }
+  }
+
+  input[type="submit"] {
+    position: absolute;
+    bottom: 1.5rem;
+    right: 0;
+    height: 4.4rem;
+    width: 13.2rem;
+    border: none;
+    background-color: $main-pink;
+    border-radius: .3rem;
+    color: #fff;
+    text-align: center;
+    font-weight: 300;
+    outline: none;
+    cursor: pointer;
+  }
+
+  .disabled {
+    background-color: lighten(rgba($main-pink, .8), 10%) !important;
+  }
+}

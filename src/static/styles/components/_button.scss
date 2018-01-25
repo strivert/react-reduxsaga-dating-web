@@ -1,0 +1,11 @@
+.button {
+  border: 0.1rem solid $badge-color;
+  font-size: $m-size;
+  font-weight: 600;
+  cursor: pointer;
+
+  &:focus {
+    display: none;
+    background: transparent;
+  }
+}

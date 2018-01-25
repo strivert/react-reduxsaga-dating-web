@@ -1,0 +1,81 @@
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: Rubik, sans-serif;
+  font-size: $s-size;
+  box-sizing: border-box;
+}
+
+.main {
+  min-height: calc(100vh - 26rem);
+}
+
+.content-wrapper {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.ti-menu,
+.ti-close {
+  color: $main-blue;
+  cursor: pointer;
+}
+
+.ti-close {
+  border: 1px solid $main-blue;
+  border-radius: 50%;
+  padding: .5rem;
+}
+
+.ball-spin-fade-loader {
+  color: $main-blue;
+}
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/****************************************************
+ * Notifications & Errors
+*****************************************************/
+
+.error {
+  color: $error-red;
+  margin: 1rem auto;
+  text-align: center;
+  width: 90%;
+}
+
+/****************************************************
+ * Icons
+*****************************************************/
+.edit-pencil {
+  display: block;
+  width: 3rem;
+  height: 3rem;
+  opacity: .79;
+  background: #fff url("../images/pencil-edit-button.svg") center/50% no-repeat;
+  border-radius: 50%;
+  cursor: pointer;
+
+  &:active {
+    opacity: 1;
+  }
+}
+
+/****************************************************
+ * Media Queries
+*****************************************************/
+@media (min-width: $tablet-screen) {
+  .main {
+    min-height: calc(100vh - 21rem);
+  }
+
+  .content-wrapper {
+    width: 100%;
+  }
+}

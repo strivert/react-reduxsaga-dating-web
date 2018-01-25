@@ -1,0 +1,151 @@
+.footer {
+  margin: 4rem auto 0;
+  min-height: 26rem;
+  background-color: $main-blue;
+  text-align: center;
+  color: $white;
+
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  a {
+    color: $white;
+    text-decoration: none;
+  }
+
+  a:hover {
+    color: $badge-color;
+  }
+
+  hr {
+    opacity: .36;
+    width: 85%;
+  }
+}
+
+.footer__nav {
+  display: flex;
+  justify-content: center;
+  font-size: 1.5rem;
+  font-weight: 300;
+
+  &:first-of-type {
+    padding-top: 5rem;
+  }
+
+  li {
+    padding: 0 1.5rem;
+    margin: 1rem 0;
+    border-right: 1px solid $white;
+
+    &:last-of-type {
+      border-right: none;
+    }
+  }
+}
+
+.footer__copyright {
+  font-weight: 300;
+  font-size: 1.5rem;
+  margin-top: 2rem;
+
+  p {
+    margin: 0;
+  }
+
+  ul {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+  }
+
+  li:first-of-type {
+    margin-right: 1.5rem;
+  }
+
+  span {
+    display: none;
+  }
+}
+
+.footer__social {
+  display: flex;
+  justify-content: center;
+  margin-top: 2.4rem;
+  padding-bottom: 2.4rem;
+  font-size: 2.2rem;
+
+  a:first-of-type {
+    margin-right: 4.8rem;
+  }
+}
+
+@media (min-width: $tablet-screen) {
+  .footer {
+    min-height: 21rem;
+
+    hr {
+      width: 80%;
+      margin-top: 2.2rem;
+      margin-bottom: 2.5rem;
+    }
+  }
+
+  .footer__nav {
+    display: inline-block;
+    line-height: 3.2rem;
+
+    &:first-of-type {
+      padding-top: 4rem;
+
+      li:last-of-type {
+        border-right: 1px solid $white;
+      }
+    }
+
+    li {
+      display: inline;
+    }
+  }
+
+  .footer__copyright {
+    display: flex;
+    justify-content: center;
+    line-height: 1.5rem;
+
+    ul {
+      margin-top: 0;
+      margin-left: 1rem
+    }
+
+    p {
+      padding-right: 1rem;
+    }
+
+    span {
+      display: inline;
+    }
+  }
+
+  .footer__social {
+    margin-top: 3.2rem;
+  }
+}
+
+@media (min-width: $desktop-screen) {
+  .footer {
+    min-height: 26rem;
+
+    .footer-wrapper {
+      width: 70%;
+      margin: 0 auto;
+    }
+
+    .footer__nav:first-of-type {
+      padding-top: 6rem;
+    }
+  }
+}

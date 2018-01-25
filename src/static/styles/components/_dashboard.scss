@@ -1,0 +1,40 @@
+.dashboard {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  margin: 0 auto;
+
+  .has-more {
+    text-align: center;
+    margin-top: 1rem;
+  }
+}
+.dashboard__space {
+  margin-top: 3rem;
+}
+
+@media (min-width: $tablet-screen) {
+  .dashboard {
+    flex-direction: row;
+  }
+
+  .dashboard__main {
+    flex: 2 0 33%;
+    margin-right: 5.0rem;
+  }
+}
+
+@media (min-width: $desktop-screen) {
+  .dashboard__main {
+    flex-basis: 50%;
+  }
+  .dashboard__aside {
+    flex-grow: 1.2;
+    max-width: 33.5rem;
+  }
+}
+
+.single__activity {
+  width: 90%;
+  margin: auto;
+}

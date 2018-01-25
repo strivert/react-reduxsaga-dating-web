@@ -1,0 +1,35 @@
+/* Will be reworked using mobile-first approach */
+.login {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-shadow: 0 0.4rem 0.8rem 0 rgba(52, 129, 182, 0.5);
+  top: 9.5rem;
+  left: 75%;
+  width: 25rem;
+  height: auto;
+  flex: 1 1 auto;
+  padding: 1.5rem;
+  color: $text-blue;
+  background: $white;
+  border-color: $border-blue;
+  margin: 5rem auto;
+}
+
+.login__button {
+  background: $badge-color;
+  color:$white;
+  padding: 0.8rem 0; 
+  font-weight: normal; 
+}
+
+.login__forgot {
+  text-align: center;
+  padding-top: 3rem;
+  padding-bottom: 1rem;
+  font-weight: 500;
+}
+
+.login__header {
+  color: #363535;
+}

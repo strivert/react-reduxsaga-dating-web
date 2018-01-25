@@ -1,0 +1,75 @@
+.icebreakers-container {
+  padding-top: 16px;
+
+  .title {
+    text-align: center;
+    font-weight: 500;
+    color: #004B79;
+    line-height: 16px;
+
+    margin-bottom: 8px;
+  }
+
+  .icons {
+    padding: 0 16px 16px;
+  }
+
+  .ibicon {
+    display: inline-block;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+
+    text-align: center;
+    line-height: 40px;
+
+    padding: 8px;
+
+    img {
+      display: inline-block;
+      vertical-align: middle;
+    }
+
+    &:hover {
+      background-color: #BAE3FF;
+    }
+  }
+
+  .actions {
+    display: flex;
+    justify-content: flex-start;
+
+    .action-cancel {
+      background-color: #ffffff;
+      height: 48px;
+      line-height: 48px;
+      border-bottom-left-radius: 8px;
+      padding: 0 16px;
+      color: #2B7DB6;
+      font-family: Roboto;
+      font-size: 16px;
+
+      cursor: pointer;
+    }
+
+    .action-send {
+      background-color: #2B7DB6;
+      height: 48px;
+      line-height: 48px;
+      flex-grow: 1;
+      border-bottom-right-radius: 8px;
+      padding: 0 16px;
+      font-family: Roboto;
+      text-align: center;
+      font-size: 16px;
+      color: #FFFFFF;
+
+      cursor: pointer;
+
+      img {
+        vertical-align: middle;
+        margin-left: 5px;
+      }
+    }
+  }
+}

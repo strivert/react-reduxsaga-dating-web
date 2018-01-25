@@ -1,0 +1,126 @@
+.profile {
+  position: relative;
+  min-height: 100%;
+}
+
+.profile__header {
+  position: relative;
+  z-index: 0;
+}
+
+.profile__header__notification {
+  position: absolute;
+  bottom: 7.2rem;
+
+  color: #fff;
+  line-height: $s-size;
+  margin: 0;
+  padding: 8px 16px;
+  font-weight: 300;
+  z-index: 100;
+}
+
+@media (min-width: $tablet-screen) {
+  .profile {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 4.8rem auto 0;
+    width: 95%;
+
+    .header__section {
+      flex: 1 0 30%;
+    }
+
+    .activities__details__section {
+      flex: 2 0 50%;
+      margin-left: 1rem;
+    }
+
+    .details__section {
+      flex: 2 0 50%;
+    }
+  }
+
+  .profile__header__notification {
+    top: -3.2rem;
+    left: 20rem;
+    width: 35rem;
+    height: 1.6rem;
+    background: url("../images/warning.svg") no-repeat;
+    background-size: 1.6rem 1.5rem;
+    color: $text-blue;
+    font-weight: 500;
+    margin: 0;
+    padding: 0 0 0 1rem;
+    text-align: center;
+  }
+}
+
+@media (min-width: $desktop-screen) {
+  .profile {
+    width: 90%;
+    
+    .header__section {
+      flex-basis: 35%;
+      margin-right: 2rem;
+    }
+  }
+
+  .profile__header__notification {
+    background: rgba(#fff, .7) url("../images/warning.svg") no-repeat 3.5rem .14rem;
+    background-size: 2rem 2rem;
+    width: 99%;
+    padding: .5rem;
+    top: 0;
+    left: 0;
+  }
+}
+
+@media (min-width: 1200px) {
+  .profile {
+    .header__section {
+      flex-basis: 30%;
+    }
+  }
+}
+
+@media (min-width: 1300px) {
+  .profile {
+    width: 90%;
+
+    .header__section {
+      flex-basis: 25%;
+    }
+  }
+}
+
+.reactivation_msg {
+  width: 90%;
+  margin: auto;
+  margin-top: 30px;
+  text-align:center;
+
+  .confirm {
+    background: #ed1751;
+    margin: auto;
+    margin-top: 40px;
+    border-radius: 2.3rem;
+    font-size: 1.4rem;
+  }
+  p{
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    color: #444444;
+  }
+  p.bold {
+    font-weight: bold;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .reactivation_msg {
+    .settings {
+      flex-direction: column;
+    }
+  }
+}

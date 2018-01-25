@@ -1,0 +1,107 @@
+.commentbox {
+  color: $text-gray;
+  background: $message-background;
+
+  .fa-heart {
+    color: $badge-color;
+    font-size: 1.8rem;
+    margin-right: .5rem;
+  }
+}
+
+.commentbox__list {
+  margin: 1rem;
+}
+
+.commentbox__more {
+  cursor: pointer;
+  font-size: 1.2rem;
+  line-height: 1.6rem;
+  color: $text-blue;
+  margin-bottom: 2rem;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.commentbox__avatar {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.commentbox__item {
+  display: flex;
+  margin-top: 1rem;
+
+  .username {
+    text-decoration: none;
+    font-weight: 500;
+    color: $text-blue;
+    margin-right: 1rem;
+
+    &:hover{
+      text-decoration: underline;
+    }
+  }
+}
+
+.commentbox__body {
+  margin-left: 5rem;
+  border-bottom: 0.1rem $light-gray solid;    
+  width: 100%;
+  padding-bottom: 1.5rem;
+  white-space: pre-line;
+  box-sizing: border-box;
+}
+
+.commentbox__time-stamp {
+  margin-bottom: 0;
+  line-height: 0;
+  color: $active-gray;
+  font-size: 1.4rem;
+}
+
+.commentbox__post {
+  display: flex;
+  color: $text-gray;
+  margin: 1rem;
+  justify-content: space-between;
+}
+
+.commentbox__field {
+  width: 100%;
+  margin-left: 5rem;
+  margin-right: 2rem;
+  padding-right: 1rem;
+
+  textarea {
+    width: 100%;
+    border-radius: 2.5rem;
+    border: .1rem $border-blue solid;
+    padding: 1rem;
+    padding-left: 1.5rem;
+    display: block;
+    line-height: 1.4rem;
+    height: 2rem; 
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    resize: none;
+
+    &:focus {
+      outline: none;
+    }
+  }
+}
+
+.commentbox__btn {
+  align-self: flex-end;
+}
+
+.commentbox__love__count {
+  margin-top: 1rem;
+  margin-left: 1rem;
+  color: $active-gray;
+}

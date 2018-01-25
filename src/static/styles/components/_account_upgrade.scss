@@ -1,0 +1,330 @@
+.account__upgrade {
+  width: 95%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: $dark-gray;
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+.account__upgrade__sm-hide {
+  display: none;
+}
+
+.account__upgrade__bg-hide {
+  display: inline;
+}
+
+.account__upgrade__heading {
+  font-weight: 400;
+  font-size: 1.6rem;
+}
+
+.account__upgrade__plans {
+  display: flex;
+  justify-content: space-around;
+  border: none;
+
+  .is-selected {
+    border: .1rem solid $main-border;
+    border-color: $main-border;
+    height: 13rem;
+    margin-top: -1rem;
+
+    .save {
+      margin-top: 1rem;
+    }
+  }
+}
+
+.account__upgrade__option {
+  display: flex;
+  flex-direction: column;  
+  width: 10rem;
+  height: 11.5rem;
+  box-shadow: 0 .2rem .8rem 0 rgba(213, 219, 223, 0.3);
+  cursor: pointer;
+
+  .save {
+    font-size: 1.4rem;
+  }
+
+  .percent {
+    font-size: 2rem;
+    line-height: 1.2rem;
+    margin-bottom: 1.6rem;
+  }
+
+  .pricing {
+    color: $active-blue;
+    margin-bottom: 1rem;
+
+    p {
+      margin: 0;
+    }
+  }
+
+  .plan {
+    font-weight: 300;
+    color: $active-gray;
+  }
+
+  .quarterly {
+    margin-bottom: 1.4rem;
+  }
+
+  &:hover, &:focus {
+    border: .1rem solid $main-border;
+  }
+}
+
+.account__upgrade__description {
+  display: none;
+}
+
+.account__upgrade__btn {
+  border-radius: 20rem;
+  background: $badge-color;
+  color: $white;
+  text-transform: capitalize;
+  width: 90%;
+  height: 4rem;
+  margin-top: 3rem;
+  border-color: $badge-color;
+  font-size: 1.4rem;
+  font-weight: 300;  
+}
+
+.account__upgrade__benefits {
+  width: 95%;
+  margin: 0 auto;
+
+  p {
+    border-bottom: .1rem solid $border-blue;
+    font-weight: 300;
+    padding-bottom: 0 .8rem;
+  }
+}
+
+.account__upgrade__start__free {  
+  color: $active-blue;
+  font-weight: 300;
+  font-size: 1.4rem;
+  cursor: pointer;
+  text-decoration: none;  
+}
+
+.account__upgrade__payment {
+  padding: 2rem;
+  width: 100%;
+  
+  button {
+    padding: 1rem;
+    background-color: $badge-color;
+    color: $white;
+    outline: none;
+    border-radius: 20rem;
+    border-color: $badge-color;
+    width: 80%;
+  }
+
+  .braintree-dropin-react-submit-btn-wrapper {
+    button[disabled] {
+      cursor: not-allowed;
+      opacity: 0.6;
+    }
+  }
+
+  .braintree-option .braintree-option__label {
+    text-align: left;
+  }
+}
+
+.account__upgrade__back__arrow {
+  color: $active-blue;
+  cursor: pointer;
+  font-size: 1.4rem;
+
+  .fa {
+    margin-right: .5rem;
+    font-size: 2rem;
+    vertical-align: middle;
+  }
+}
+
+
+.acccount__upgrade__navigation {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+  
+  button {
+    width: 10rem;
+    border-radius: 5rem;
+    color: $white;
+    padding: 1.5rem;
+    cursor: pointer;
+    
+    &:focus {
+      outline: none;
+    }
+  }
+  
+  .next {
+    background: $badge-color;
+    border-color: $badge-color;
+  }
+  
+  .prev {
+    background: $comment-orange;
+    border-color: $comment-orange;
+  }
+  
+  fa {
+    vertical-align: middle;
+  }
+}
+
+.account__upgrade__personal__details {
+  width: 90%;
+  margin: 2rem auto;
+  color: $dark-gray;
+  box-shadow: 0 .8rem 1.2rem 0 rgba(213, 219, 223, 0.3);
+  padding: 2rem;
+
+  h3 {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  label {
+    display: block;
+    margin-top: 1.5rem;
+    font-size: 1.2rem;
+  }
+
+  input[type="text"],
+  select {
+    margin-top: 0;
+    border-bottom: .2rem solid $main-blue;
+  }
+
+  .Select-control {
+    border-bottom: .2rem solid $main-blue;
+  }
+}
+
+@media(min-width: $tablet-screen) {
+ .account__upgrade__heading {
+    font-size: 2rem;
+ }
+
+  .account__upgrade {
+    .account__upgrade__payment,
+    .display__notification {
+      width: 60%;
+    }
+  }
+
+  .account__upgrade__plans {
+    width: 80%;
+    font-size: 1.6rem;
+    margin-top: 1.5rem;
+
+    .is-selected {
+      height: 17rem;
+    }
+  }
+
+  .account__upgrade__option {
+    height: 14rem;
+    width: 11rem;
+    box-shadow: 0 .8rem 1.2rem 0 rgba(213, 219, 223, 0.3);
+    padding: 2rem;
+
+    .plan {
+      padding-top: 1.5rem;
+      font-size: 1.2rem; 
+    }
+
+    .save {
+      margin-bottom: 1rem;
+    }
+
+    .percent {
+      font-size: 2.4rem;
+    }
+  }
+
+  .account__upgrade__actions {
+    display: flex;
+    width: 80%;
+    justify-content: space-around;
+  
+    margin-top: 1rem;
+
+    .account__upgrade__benefits {
+      font-size: 1.6rem;
+      p {
+        margin: 2rem;
+      }
+
+      .account__upgrade__heading {
+        font-size: 3rem;
+      }
+    }
+
+    .account__upgrade__btn {
+      margin-top: 0;
+      margin-top: 1rem;
+      padding: 2rem; 
+      width: 80%;
+      height: 6rem;
+    }
+  }
+
+  .account__upgrade__description {
+    display: inline;
+    font-weight: 300;
+
+    p:not(:first-child) {
+      margin: 0;
+      font-size: 1.4rem;
+    }
+
+    .pricing {
+      font-size: 2rem;
+      line-height: 1.2rem;
+      margin-bottom: 1rem;
+    }
+  }
+
+  .account__upgrade__sm-hide {
+    display: inline;
+  }
+
+  .account__upgrade__bg-hide {
+    display: none;
+  }
+
+  .account__upgrade__action__specifics {
+    margin-top: 2rem;
+    padding: 0 2rem;
+  }
+
+  .account__upgrade__personal__details {
+    width: 70%;
+  }
+}
+
+@media(min-width: $desktop-screen) {
+  .account__upgrade__actions {
+    width: 70%;
+  }
+
+  .account__upgrade__personal__details {
+    width: 60%;
+  }
+}

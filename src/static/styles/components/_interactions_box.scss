@@ -1,0 +1,18 @@
+/* ======================================================
+    This component needs to be placed inside a flex container
+    to work properly
+   ====================================================== */
+.interactions__box {
+  display: flex;
+  justify-content: flex-end;
+
+  .fa-heart-o,
+  .fa-heart {
+    text-align: center;
+    padding: 1.1rem 1.5rem;
+    cursor: pointer;
+    transition: 0.25s;
+    color: $badge-color;
+    font-size: 2.4rem;
+  }
+}

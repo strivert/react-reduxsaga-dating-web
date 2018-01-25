@@ -1,0 +1,19 @@
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <desc></desc>
+    <defs></defs>
+    <g id="Dashboard" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Dashboard-Main-1440" transform="translate(-547.000000, -146.000000)" fill-rule="nonzero" fill="#004B79">
+            <g id="Group-9" transform="translate(0.000000, 120.000000)">
+                <g id="Stacked-Group" transform="translate(120.000000, 26.000000)">
+                    <g id="Group-2" transform="translate(427.000000, 0.000000)">
+                        <g id="Stacked-Group-2">
+                            <g id="Stacked-Group">
+                                <path d="M21.6,0 C22.9254834,0 24,1.0745166 24,2.4 L24,16.8 C24,18.1254834 22.9254834,19.2 21.6,19.2 L4.8,19.2 L0,24 L0,2.4 C0,1.068 1.08,0 2.4,0 L21.6,0 L21.6,0 Z M2.4,2.4 L2.4,18.204 L3.804,16.8 L21.6,16.8 L21.6,2.4 L2.4,2.4 L2.4,2.4 Z M4.8,6 L19.2,6 L19.2,8.4 L4.8,8.4 L4.8,6 L4.8,6 Z M4.8,10.8 L15.6,10.8 L15.6,13.2 L4.8,13.2 L4.8,10.8 Z" id="tabbar/msg-off"></path>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,91 @@
+.modal {
+  display: none;
+}
+
+.modal.modal-open {
+  display: block;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  z-index: 10;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.transition-group {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  z-index: 11;
+
+  position: relative;
+}
+
+.modal-wrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  right: auto;
+  bottom: auto;
+
+  z-index: 11;
+
+  min-width: 500px;
+
+  background-color: white;
+
+  transform: translate(-50%, -50%);
+
+  .modal-close {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    color: black;
+    font-size: 24px;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+
+    cursor: pointer;
+  }
+}
+
+.modal-appear {
+  opacity: 0.01;
+  transform: translate(-50%, -50%) scale(0.6);
+
+  &.modal-appear-active {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+    transition: opacity 100ms ease-in, transform 100ms ease-in;
+  }
+}
+
+.modal-enter {
+  opacity: 0.01;
+  transform: translate(-50%, -50%) scale(0.6);
+
+  &.modal-enter-active {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+    transition: opacity 100ms ease-in, transform 100ms ease-in;
+  }
+}
+
+.modal-exit {
+  opacity: 1;
+
+  &.modal-exit-active {
+    opacity: 0.01;
+    transition: opacity 100ms ease-out, transform 100ms ease-out;
+  }
+}

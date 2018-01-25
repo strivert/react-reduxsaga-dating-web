@@ -1,0 +1,121 @@
+.activity__card {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  min-height: 15.7rem;
+  margin-top: 4.8rem;
+  box-shadow: 0 4px 12px 0 rgba(0,75,121,0.07);
+  border: 1px solid #F5F5F5;
+}
+
+.card__header {
+  p {
+    float: right;
+    height: 1.6rem;
+  }
+}
+
+.card__profile__picture {
+  position: absolute;
+  top: -2.8rem;
+  left: 1.6rem;
+  width: 6rem;
+  height: 6rem;
+  border-radius: 50%;
+}
+
+.card__title {
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: $main-blue;
+  margin: 1rem 1rem 0 1.5rem;
+
+  p.date {
+    float: right;
+    font-size: 1.4rem;
+    font-weight: 300;
+    margin: -0.3rem 4.8rem auto auto;
+    color: $text-blue;
+    vertical-align: center;
+  }
+
+  a {
+    text-decoration: none;
+    color: $main-pink;
+    margin-right: 0.5rem;
+  }
+
+  p {
+    font-size: 1.4rem;
+    margin-bottom: 0;
+  }
+}
+
+.card__body {
+  width: 90%;
+  margin: 0 auto 1rem;
+  font-size: 1.5rem;
+
+  h4 {
+    font-weight: 400;
+    color: $text-blue;
+    margin: 0;
+  }
+
+  p {
+    text-align: left;
+    margin: .7rem 0 1.5rem 0;
+    line-height: 2.4rem;
+  }
+
+  img {
+    width: 31%;
+    min-height: 10rem;
+    margin-right: 3.33%;
+
+    &:last-of-type {
+      margin-right: 0;
+    }
+  }
+}
+
+@media (min-width: $desktop-screen) {
+  .activity__card {
+    margin-top: 7.4rem;
+
+    h3, .card__body {
+      margin-left: 12rem;
+    }
+
+    .card__profile__picture {
+      position: absolute;
+      top: -2.8rem;
+      left: 3rem;
+      width: 8.5rem;
+      height: 8.5rem;
+      border-radius: 50%;
+    }
+
+    .card__body {
+      width: 75%;
+
+      img {
+        width: 22%;
+        min-height: 7rem;
+        margin-right: 3.33%;
+
+        &:last-of-type {
+          margin-right: 0;
+        }
+      }
+    }
+  }
+}
+
+
+
+
+
+
+
+

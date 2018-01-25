@@ -1,0 +1,193 @@
+.messages {
+  display: flex;
+  width: 90%;
+  margin: 4.7rem auto;
+  // max-height: 100vh;
+
+  .active-message {
+    position: relative;
+    z-index: 1200;
+    margin-right: 0;
+    background-color: $message-background;
+    border-right: none;
+    border-bottom: 1px solid $active-blue;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.09);
+  }
+
+  .active-thread {
+    border-top: none;
+  }
+
+  .disable-scroll {
+    overflow: hidden !important;
+  }
+
+  .no-message {
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #ed1651;
+    text-align: center;
+    padding: 3.5rem;
+    font-size: 1.5rem;
+    border: 1px solid #ed1651;
+    margin: auto; 
+  } 
+}
+
+.messages__list {
+  position: relative;
+  flex: 1 36.5%;
+  // margin-right: 2.4rem;'
+  margin-right: -1px;
+  // max-height: 100%;
+  max-width: 40rem;
+  // overflow: scroll;
+  overflow-x: hidden;
+
+  .new-message .username {
+    color: $main-pink
+  }
+  .favorited .username {
+    color: $main-pink
+  }
+}
+
+.messages__list__item {
+  position: relative;
+  border: 1px solid $active-blue;
+  border-bottom: none;
+  padding: 1rem 3.3rem;
+  margin-right: 2.4rem;
+
+  cursor: pointer;
+
+  &:last-of-type {
+    border-bottom: 1px solid $active-blue;
+  }
+
+  .fa-star {
+    position: absolute;
+    top: 2.5rem;
+    left: 1rem;
+    color: $main-pink;
+    font-size: 1.9rem;
+  }
+}
+
+.messages__conversation {
+  position: relative;
+  flex: 1 63.5%;
+  // max-height: 100vh;
+  // overflow-y: scroll;
+  background-color: $message-background;
+  border: 1px solid $active-blue;
+
+  .message-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    overflow-x: hidden;
+    width: 100%;
+    height: 100%;
+    background-color: rgba($message-background, 0.8);
+  }
+
+  .ball-spin-fade-loader {
+    left: 30rem;
+    top: 30vh;
+  }
+}
+
+/****************************************************
+ * Messages Mobile View
+*****************************************************/
+.messages__conversation.is-mobile {
+  display: none;
+
+  .member {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .messages {
+    max-height: none;
+  }
+  .messages__conversation {
+    display: none;
+  }
+  .messages__conversation.is-mobile {
+    display: block;
+    max-height: none;
+    overflow-y: visible;
+    cursor: default;
+  }
+  .messages__list {
+    overflow: visible;
+  }
+  .messages .active-message {
+    border-right: 1px solid #56A0D3;
+  }
+  .conversation__message .message .user-avatar {
+    width: 3rem;
+    height: 3rem;
+  }
+  .conversation__actions {
+    position: static;
+  }
+  .conversation__send .message-upload-btn {
+    position: absolute;
+    bottom: 1rem;
+    width: 4.6rem;
+    height: 4.6rem;
+    bottom: 1.5rem;
+  }
+  .conversation__send textarea {
+    width: 100%;
+  }
+}
+
+/* ==========================================================
+ *  The code that follows is really ugly but the designer
+ * decided to use some techniques that are not easy to code
+ * so this will have to do for now since I've already wasted
+ * too much time on it
+ ========================================================== */
+
+@media (min-width: $tablet-screen) and (max-width: 865px) {
+  .messages {
+    .active-message {
+      // width: 88%;
+    }
+  }
+
+  .messages__list {
+    flex-basis: 47%;
+  }
+
+  .messages__conversation {
+    flex-basis: 53%;
+  }
+}
+
+@media (min-width: 866px) and (max-width: 1023px) {
+  .messages__list {
+    flex-basis: 43%;
+  }
+
+  .messages__conversation {
+    flex-basis: 57%;
+  }
+}
+
+@media (min-width: $desktop-screen) and  (max-width: 1077px) {
+  .messages__list {
+    flex-basis: 36%;
+  }
+
+  .messages__conversation {
+    flex-basis: 64%;
+  }
+}
+

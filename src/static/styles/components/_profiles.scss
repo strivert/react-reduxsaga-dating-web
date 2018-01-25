@@ -1,0 +1,110 @@
+.profiles-wrapper {
+  display: flex;
+  flex-direction: column;
+  color: $text-blue;
+  justify-content: center;
+  
+
+  @media screen and (min-width: $desktop-screen) {
+    flex-direction: row;
+    width: 90%;
+    margin: auto;    
+    margin-top: 2.8rem;
+  }
+
+  @media screen and (min-width: 1330px){
+    width: 80%;
+  }
+}
+
+.profiles-wrapper--open {
+  @media screen and (min-width: $tablet-screen){
+    display: flex;
+    color: $text-blue;
+    width: 95%;
+    margin: auto;
+  }
+}
+
+.profiles__show {
+  display: inherit;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+  margin-bottom: -1rem;
+
+  @media screen and (min-width: $desktop-screen) {
+    display: none;
+  }
+}
+
+@media(min-width: $tablet-screen) {
+  .profiles__close {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+    border-radius: .8rem;
+  }
+}
+
+.profiles__header {
+  text-align: center;
+  color: $text-blue;
+  margin-top: 1rem;
+  margin-bottom: -1rem;
+  display: flex;
+  justify-content: center;
+  
+  i {
+    font-size: 2.4rem;
+  }
+  span {
+    padding-left: .5rem;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-family: Rubik;
+  }
+
+  &--close {
+    display: none;
+
+    @media screen and (min-width: $tablet-screen) {
+      display: flex;
+      margin-bottom: 1rem;
+    }
+  }
+
+  @media screen and (min-width: $desktop-screen){
+    display: none;
+  }
+}
+
+.profiles__space {
+  margin-top: 4.5rem;
+
+  @media screen and (min-width: $desktop-screen) {
+    margin-top: 2.5rem;
+  }
+}
+
+.profiles__search-btn {
+  border-radius: .8rem;
+  background: $badge-color;
+  height: 3.7rem;
+  width: 17.3rem;
+  padding-top: .5rem;
+  color: $white;
+  font-size: 1.4rem;
+}
+
+/* Override the default implementation */
+.loader {
+  position: fixed;
+  top: 3rem;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: $white;
+  z-index: 9999;
+}

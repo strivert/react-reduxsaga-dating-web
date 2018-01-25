@@ -1,0 +1,14 @@
+.formErrors {
+  height: auto;
+  font-size: 1.2rem;
+  padding: 1.5rem 3.5rem 1.5rem 1.4rem;
+  margin-top: 2rem;
+  background-color: $light-gray;
+  border: .1rem solid $light-gray;
+  border-radius: .4rem;
+  color: $badge-color;
+
+  p:first-of-type::before {
+    content: '**'
+  }
+}

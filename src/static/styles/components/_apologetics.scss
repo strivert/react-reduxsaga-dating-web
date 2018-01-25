@@ -1,0 +1,82 @@
+.main__activities {
+  display: flex;
+  flex-direction: column;
+  color: #2B7DB6;
+  margin-top: 2.3rem;
+
+  .activities__aside {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: 2.5rem auto;
+    line-height: 4rem;
+
+    @media (min-width: $tablet-screen) {  
+      flex: 40%;
+    }
+
+    @media (min-width: $desktop-screen) {
+	  flex: 25%;
+	}
+  }
+  .main_apologetics {
+    display: flex;
+    flex-direction: column;
+    flex: 75%;
+    width: 90%;
+    margin: 0 auto;
+
+    @media (min-width: $tablet-screen) {
+      width: 90%;
+	  margin: 0 auto;
+	  margin-left: 2rem;
+	}
+    h2 {
+      color: #004B79;
+    }
+
+	h3 {
+	  font-size: 2.4rem;
+      color: #004B79;
+      line-height: 2.4rem;
+      font-weight: 500;
+      margin-bottom: -1rem;
+      margin-top: 4rem;
+	}
+	.load-more-spinner {
+      width: 100%;
+      height: 100px;
+      text-align: center;
+
+      .sk-spinner.ball-spin-fade-loader {
+        left: 50%;
+        top: 45%;
+        marign-left: -10px;
+      }
+	}
+  }
+  @media (min-width: $tablet-screen) {
+    flex-direction: row;
+    width: 90%;
+    margin: 2.3rem auto;
+  }
+  @media (min-width: 1400px) {
+    width: 80%;
+  }
+
+  button {
+  	font-size: 1.6rem;
+    line-height: 1.6rem;
+    font-weight: 300;
+    color: #fff;
+    width: 22rem;
+    height: 4.4rem;
+    margin-top: 2rem;
+    border-radius: 0.3rem;
+    cursor: pointer;
+  }
+}
+
+
+.main_apologetics.settings__main {
+}

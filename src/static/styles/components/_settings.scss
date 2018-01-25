@@ -1,0 +1,405 @@
+.settings {
+  display: flex;
+  flex-direction: column;
+  color: $text-blue;
+  margin-top: 2.3rem;
+
+  h3 {
+    font-size: 2.4rem;
+    color: $main-blue;
+    line-height: 2.4rem;
+    font-weight: 500;
+    margin-bottom: -1rem;
+    margin-top: 4rem;
+  }
+
+  h3.settings__header {
+    margin: 2.4rem auto;
+  }
+
+  button {
+    font-size: 1.6rem;
+    line-height: 1.6rem;
+    font-weight: 300;
+    color: $white;
+    width: 22rem;
+    height: 4.4rem;
+    margin-top: 2rem;
+    border-radius: 0.3rem;
+    cursor: pointer;
+  }
+
+  @media screen and (min-width: $tablet-screen) {
+    flex-direction: row;
+    width: 90%;
+    margin: 2.3rem auto;
+  }
+
+  @media screen and (min-width: 1400px) {
+    width: 80%;
+  }
+}
+
+.settings__aside {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  margin: 2.5rem auto;
+  line-height: 4rem;
+
+  @media screen and (min-width: $tablet-screen) {
+    flex: 40%;
+  }
+
+  @media screen and (min-width: $desktop-screen) {
+    flex: 25%;
+  }
+}
+
+.settings__avatar {
+  height: 27rem;
+  position: relative;
+
+  img {
+    height: 100%;
+    width: 100%;
+  }
+
+  span {
+    position: absolute;
+    height: 4rem;
+    width: 4rem;
+    left: 80%;
+    bottom: 5%;
+    background: $white;
+    opacity: 0.79;
+    border-radius: 50%;
+    margin-top: 0.5rem;
+    text-align: center;
+    color: $main-blue;
+  }
+
+  i {
+    margin-top: 0.5refm;
+  }
+}
+
+.settings__options {
+  list-style: none;
+  padding: 0;
+  font-weight: 500;
+  font-size: 1.6rem;
+
+  a {
+    color: $main-blue;
+    text-decoration: none;
+  }
+}
+
+.settings__main {
+  display: flex;
+  flex-direction: column;
+
+  flex: 75%;
+  width: 90%;
+  margin: 0 auto;
+
+  label:not(.allow__others):not(.enable__notification) {
+    display: block;
+    font-size: 1.2rem;
+    color: $main-blue;
+    line-height: 1.2rem;
+    margin-top: 3.2rem;
+  }
+
+  .message__reminder {
+    color: $main-blue;
+    font-size: 1.2rem;
+  }
+
+  input[type="text"],
+  input[type="password"] {
+    margin-top: 0;
+  }
+
+  select:not(.birthday__field):not(.age__range) {
+    min-width: 100%;
+  }
+
+  textarea {
+    width: calc(100% - 3.6rem);
+    color: $text-blue;
+    resize: none;
+    border-radius: .5rem;
+    border-color: $textarea-border ;
+    padding: 1.8rem;
+
+    &:focus {
+      border: $textarea-focus;
+    }
+  }
+
+  .allow__others,
+  .enable__notification {
+    margin-left: 0.5rem;
+  }
+
+  @media screen and (min-width: $tablet-screen) {
+    width: 90%;
+    margin: 0 auto;
+    margin-left: 2rem;
+  }
+
+  // Override react-select styles
+  .Select-control {
+    border-bottom: 0.2rem $main-blue solid;
+  }
+
+  .Select-arrow {
+    border-color: $main-blue transparent transparent;
+  }
+}
+
+.settings__description {
+  .birthday {
+    display: flex;
+    justify-content: space-between;
+
+    &__field {
+      width: 30%;
+    }
+  }
+}
+
+.settings__preference {
+  label {
+    font-size: 1.6rem;
+    color: $main-blue;
+  }
+
+  .preference {
+    @media screen and (min-width: $tablet-screen) {
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  .age {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 25%;
+    margin-bottom: -1rem;
+
+    span {
+      margin: 0 .5rem;
+    }
+
+    @media screen and (min-width: $tablet-screen) {
+      margin-left: 2rem;
+    }
+
+    @media screen and (min-width: $desktop-screen) {
+      width: 25%;
+    }
+  }
+}
+
+.settings__essay {
+  text-align: justify;
+
+  label {
+    font-weight: 500;
+    margin-bottom: .5rem;
+  }
+}
+
+.settings__update-button {
+  background: $badge-color;
+  margin-top: 3rem;
+}
+
+.settings__cancel__account {
+  a {
+    text-decoration: none;
+
+    &:hover,
+    &:focus {
+      color: $main-blue;
+    }
+  }
+
+  .cancel__label::before {
+    content: "*";
+    color: $badge-color;
+    margin-right: 0.5rem;
+  }
+}
+
+.cancel__account__buttons {
+  .cancel {
+    background: $comment-orange;
+    border-color: $comment-orange;
+    margin-right: 1rem;
+  }
+
+  .confirm {
+    background: $badge-color;
+  }
+
+  @media screen and (min-width: $tablet-screen) {
+    display: flex;
+  }
+}
+
+.settings__blocked__user {
+  hr {
+    border: .1rem $border-blue solid;
+  }
+
+  .block__user-btn {
+    background: $badge-color;
+    margin-top: 0;
+  }
+
+  .block__user__form {
+    display: flex;
+
+    input {
+      margin-right: 2rem;
+    }
+  }
+
+  .blocked__users {
+    margin-top: 2rem;
+    padding: 0;
+    width: 80%;
+
+    .user__list {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      list-style: none;
+    }
+
+    .username {
+      margin-right: 5rem;
+    }
+
+    .remove {
+      background: $comment-orange;
+      height: 3.5rem;
+      width: 12rem;
+      margin-top: 0;
+      border-color: $comment-orange;
+    }
+  }
+}
+
+.account__information__form {
+  @media screen and (min-width: $tablet-screen) {
+    margin-left: 2rem;
+  }
+}
+
+@media screen and (min-width: $desktop-screen) {
+  .cancel__form,
+  .account__information__form,
+  .settings__blocked__user {
+    width: 65%;
+  }
+}
+
+.settings__fields {
+  @media screen and (min-width: $tablet-screen) {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-content: center;
+
+    > div {
+      width: 46%;
+    }
+  }
+
+  @media screen and (min-width: $desktop-screen) {
+    > div {
+      width: 30%;
+    }
+  }
+}
+
+
+.settings__personality {
+  p {
+    text-align: justify;
+  }
+
+  .error {
+    border-color: $badge-color;
+    color: $badge-color;
+    background-color: #f2dede;
+    padding: 1.5rem 3.5rem 1.5rem 1.4rem;
+    margin-top: 2.5rem;
+    font-weight: 300;
+    font-size: 1.6rem;
+    border: .1rem solid $light-gray;
+    border-radius: .4rem;
+  }
+
+  .has-error {
+    color:$badge-color;
+    text-align: left;
+    font-size: 1.2rem;
+
+    &::before {
+      content: '*'
+    }
+  }
+
+  .action__buttons {
+    display: flex;
+    justify-content: space-between;
+
+    button {
+      width: 15rem;
+      border-radius: 5rem;
+
+      &:focus {
+        outline: none;
+      }
+    }
+
+    .next {
+      background: $badge-color;
+      border-color: $badge-color;
+    }
+
+    .prev {
+      background: $comment-orange;
+      border-color: $comment-orange;
+    }
+
+    fa {
+      vertical-align: middle;
+    }
+  }
+}
+
+.settings__personality-result {
+  p {
+    text-align: justify;
+  }
+}
+
+.settings__help {
+  ol {
+    padding-left: 2rem;
+  }
+
+  .quick__start {
+    li:not(:first-child) {
+      margin-top: 1rem;
+    }
+  }
+}

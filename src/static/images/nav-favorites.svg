@@ -1,0 +1,15 @@
+<svg width="25px" height="24px" viewBox="0 0 25 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <desc></desc>
+    <defs></defs>
+    <g id="Dashboard" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Dashboard-Main-1440" transform="translate(-752.000000, -146.000000)" fill-rule="nonzero" fill="#004B79">
+            <g id="Group-9" transform="translate(0.000000, 120.000000)">
+                <g id="Stacked-Group" transform="translate(120.000000, 26.000000)">
+                    <g id="Stacked-Group-4" transform="translate(632.000000, 0.000000)">
+                        <path d="M12.5,16.9136842 L7.8,19.7810526 L9.0375,14.3747368 L4.8875,10.7368421 L10.3625,10.2694737 L12.5,5.16631579 L14.6375,10.2694737 L20.1125,10.7368421 L15.9625,14.3747368 L17.2,19.7810526 L12.5,16.9136842 Z M25,9.14526316 L16.0125,8.37473684 L12.5,0 L8.9875,8.37473684 L0,9.14526316 L6.8125,15.12 L4.775,24 L12.5,19.2884211 L20.225,24 L18.175,15.12 L25,9.14526316 Z" id="tabbar/favs-off"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

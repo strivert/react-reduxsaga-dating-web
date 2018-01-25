@@ -1,0 +1,36 @@
+.pagination {
+  display: none;
+
+  @media screen and (min-width: $desktop-screen) {
+    display: inline-flex;
+    justify-content: center;
+    font-weight: 500;
+    margin: 4rem auto;
+  }
+
+  &--close {
+    display: none;
+  }
+}
+
+.pagination__current {
+  border: .1rem $text-blue solid;
+  color: $main-blue;
+  border-radius: 10rem;
+  padding: 2rem 3rem;
+  margin-left: 2rem;
+}
+
+.pagination__text {
+  color: $main-blue;
+  margin: 2rem;
+}
+
+.pagination__prev,
+.pagination__next {
+  background: $badge-color;
+  color: $white;
+  padding: 2rem 5.7rem;
+  border-radius: 10rem;
+  cursor: pointer;
+}

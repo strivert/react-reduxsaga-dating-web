@@ -1,0 +1,197 @@
+.profile__actions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 90%;
+  margin: $s-size auto 0;
+
+  .round-btn {
+    background-color: $badge-color;
+    width: 5.6rem;
+    height: 5.6rem;
+    border: none;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 2.6rem;
+    text-align: center;
+    padding: .2rem;
+    cursor: pointer;
+    outline: none;
+    box-shadow: 0 0 8px 0 rgba(0,0,0,0.12), 0 8px 8px 0 rgba(0,0,0,0.24);
+  }
+
+  .round-btn--ghost {
+    background-color: #fff;
+    color: $main-blue;
+    border: 1px solid $border-blue;
+    box-shadow: none;
+    font-size: 2.3rem;
+  }
+
+  .btn {
+    width: 13.5rem;
+    height: 4.8rem;
+    background-color: $badge-color;
+    border: none;
+    border-radius: 3px;
+    color: #fff;
+    font-size: $s-size;
+    font-weight: 500;
+    cursor: pointer;
+    outline: none;
+  }
+
+  .btn--ghost {
+    background-color: #fff;
+    color: $text-blue;
+    border: 1px solid $border-blue;
+  }
+
+  .btn,
+  .round-btn {
+    &:active {
+      background-color: darken($badge-color, 10%);
+    }
+  }
+
+  .btn--ghost,
+  .round-btn--ghost {
+    &:active {
+      background-color: $border-blue;
+    }
+  }
+
+  .ti-comment-alt,
+  .ti-star {
+    padding: .5rem;
+  }
+
+  .ti-comment-alt {
+    position: absolute;
+    left: 1rem;
+    top: 1.1rem;
+  }
+
+  .actions__smile {
+    display: inline-block;
+    position: absolute;
+    right: $s-size;
+    top: 31.5rem;
+  }
+
+  .actions__block__wrapper {
+    margin-right: 1.2rem;
+  }
+
+  .actions__block {
+    width: 4rem;
+    height: 4rem;
+  }
+
+  .actions__favorite {
+    margin-right: .9rem;
+  }
+
+  .actions__favorite__selected {
+    background: #174978;
+    color: #fff;
+  }
+
+  .actions__message {
+    position: relative;
+
+    span {
+      margin-left: 1.2rem;
+    }
+  }
+
+  button[disabled] {
+    cursor: inherit;
+    opacity: 0.6;
+  }
+
+  .action-btns-group {
+    width: 200px;
+    margin-top: 20px;
+  }
+
+  .link {
+    display: block;
+    width: 100%;
+    text-align: center;
+    text-transform: uppercase;
+
+    border-bottom: 1px solid #A9CAE1;
+
+    font-size: 1.6rem;
+    padding: 1.6rem 0;
+
+    color: #2B7DB6;
+    text-decoration: none;
+
+    cursor: pointer;
+
+    &:last-child {
+      border-bottom: 0;
+    }
+  }
+
+  .icebreakers-wrapper {
+    width: 312px;
+    margin-left: 20px;
+  }
+}
+
+@media (min-width: $tablet-screen) {
+  .profile__actions {
+    width: 100%;
+
+    .round-btn {
+      width: 4.8rem;
+      height: 4.7rem;
+      font-size: 2rem;
+      padding: 0;
+    }
+
+    .actions__smile {
+      right: 0;
+      left: 27.5rem;
+      top: 33rem;
+    }
+
+    .action-btns-group {
+      left: 24px;
+    }
+  }
+}
+
+@media (min-width: $desktop-screen) {
+  .profile__actions {
+    justify-content: space-between;
+
+    .round-btn {
+      width: 5.6rem;
+      height: 5.4rem;
+      font-size: 2.2rem;
+    }
+
+    .actions__smile {
+      top: 37rem;
+      left: 35.5rem;
+    }
+
+    .btn {
+      width: 17.3rem;
+      height: 5.2rem;
+    }
+
+    .ti-comment-alt {
+      left: 3.2rem;
+      top: 1.4rem;
+    }
+
+    .action-btns-group {
+      left: 28px;
+    }
+  }
+}

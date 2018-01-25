@@ -1,0 +1,49 @@
+.display__notification {
+  padding: 1.5rem 3.5rem 1.5rem 1.4rem;
+  margin-top: 2.5rem;
+  font-weight: 300;
+  font-size: 1.2rem;
+  background-color: $light-gray;
+  border: .1rem solid $light-gray;
+  border-radius: .4rem;
+
+  .close {
+    float: right;
+    font-size: rem;
+    line-height: 1.5rem;
+    cursor: pointer;
+    transition: 0.3s;
+    opacity: .79;
+  }
+
+  .ti-close {
+    padding: 0;
+  }
+
+  small {
+    margin-left: .5rem;
+  }
+
+  .ti-close.close__success {
+    border-color: $main-blue;
+    margin-left: .5rem;
+  }
+
+  .ti-close.close__failure {
+    border-color: $badge-color;
+    margin-left: .5rem;    
+    color: $badge-color;
+  }
+}
+
+.alert__success {
+  color: $main-blue;
+  background-color: $success-color;
+  border-color: $text-blue;
+}
+
+.alert__danger, .close__danger {
+  color: $badge-color;
+  background-color: #f2dede;
+  border-color: #eed3d7;
+}

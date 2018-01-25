@@ -1,0 +1,46 @@
+.member {
+  display: flex;
+  margin-top: 1.5rem;
+  width: 100%;
+
+  &:first-of-type {
+    margin-top: 1.2rem;
+  }
+
+  img {
+    width: 6rem;
+    height: 6rem;
+    border-radius: 50%;
+//    padding: .5rem;
+  }
+}
+
+.member__info {
+  align-self: center;
+  margin-left: .6rem;
+  // margin-right: 3.4rem;
+  width: 100%;
+
+  a {
+    text-decoration: none;
+  }
+
+  .username, .bio {
+    margin: 0;
+    line-height: 1.9rem;
+  }
+
+  .username {
+    width: 100%;
+    font-weight: 500;
+    color: $text-blue;
+    border-bottom: 1px solid $border-blue;
+    padding-bottom: .5rem;
+  }
+
+  .bio {
+    color: #4A4A4A;
+    padding-top: .3rem;
+    font-weight: 300;
+  }
+}

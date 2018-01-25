@@ -1,0 +1,16 @@
+.notfoundpage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60vh;
+  flex-direction: column;
+}
+
+.notfoundpage__button {
+  border-radius: 2.5rem;
+  padding: 0.7rem 0;
+  width: 0.8rem;
+  color: $light-gray;
+  background: $badge-color;
+  padding-top: 1rem;
+}

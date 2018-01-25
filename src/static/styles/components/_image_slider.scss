@@ -1,0 +1,290 @@
+.slider {
+  position: relative;
+  height: 36rem;
+  margin: 0;
+
+  img {
+    display: none;
+    width: 100%;
+    max-height: 100%;
+  }
+
+  .active-slide {
+    display: inline;
+  }
+}
+
+.slider__navigation {
+  .arrow {
+    position: absolute;
+    top: .7rem;
+    font-size: 1.7rem;
+    font-weight: bold;
+    padding: .9rem;
+    background-color: #fff;
+    border-radius: 50%;
+    color: $main-blue;
+    opacity: .9;
+    cursor: pointer;
+  }
+
+  .ti-arrow-left {
+    left: $s-size;
+  }
+
+  .ti-arrow-right {
+    right: $s-size;
+  }
+
+  .rotator {
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    position: absolute;
+    bottom: 6rem;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+  }
+
+  .rotator__disc {
+    display: inline-block;
+    width: .7rem;
+    height: .7rem;
+    background-color: #F5F5F5;
+    border-radius: 50%;
+    margin-right: .8rem;
+    opacity: .8;
+
+    &:last-of-type {
+      margin-right: 0;
+    }
+  }
+
+  .active-disc {
+    background-color: $active-blue;
+  }
+}
+
+.slider__caption {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: $m-size;
+  background-color: $active-blue;
+  opacity: .72;
+}
+
+.slider__info {
+  width: 50%;
+  margin: .8rem auto 0;
+
+  h2, p {
+    margin: 0;
+    text-align: center;
+  }
+
+  h2 {
+    font-size: 2.4rem;
+    font-weight: 500;
+    color: $main-blue;
+    padding: .5rem;
+    line-height: $m-size;
+  }
+
+  p {
+    font-size: 2rem;
+    font-weight: 300;
+    color: $text-blue;
+  }
+}
+
+@media (min-width: $tablet-screen) {
+  .slider-wrapper {
+    background-color: $main-blue;
+    box-shadow: 0 4px 12px 0 rgba(0,75,121,0.15);
+  }
+
+  .slider {
+    box-shadow: none;
+  }
+
+  .slider__navigation {
+    .arrow {
+      top: 50%;
+      background-color: $main-blue;
+      opacity: 1;
+      font-size: 2rem;
+      color: #fff;
+      padding: 1rem;
+    }
+
+    .ti-arrow-left {
+      left: .7rem;
+    }
+
+    .ti-arrow-left:before {
+      content: "\e64a";
+    }
+
+    .ti-arrow-right {
+      right: .7rem;
+    }
+
+    .ti-arrow-right:before {
+      content: "\e649";
+    }
+
+    .rotator {
+      bottom: .3rem;
+      z-index: 100;
+    }
+
+    .rotator__disc {
+      width: .4rem;
+      height: .4rem;
+    }
+
+    .active-disc {
+      background-color: $active-gray;
+    }
+  }
+
+  .slider__caption {
+    height: 1.4rem;
+    background-color: $main-blue;
+  }
+
+  .slider__info {
+    margin: 0;
+    padding: .8rem $s-size 1.2rem;
+
+    h2, p {
+      color: #fff;
+      text-align: left;
+      padding: 0;
+    }
+
+    p {
+      font-size: $s-size;
+      line-height: $m-size;
+    }
+  }
+}
+
+.slider__smile-action {
+  position: absolute;
+  left: 80%;
+  top: 40%;
+}
+
+.round-btn {
+  width: 5.6rem;
+  height: 5.4rem;
+  font-size: 2.2rem;
+  border-radius: 50%;
+  border: none;
+  color: $white;
+  background: $comment-orange;
+  padding-top: 1rem;
+  cursor: pointer;
+  outline: none;
+}
+.slider__close {
+  position: absolute;
+  left: 40%;
+  top: 7%;
+  transform: translate(50%, 5%);
+  border: none;
+  background: transparent;
+
+  .ti-close {
+    color: $white;
+    border-color: $white;
+  }
+}
+
+@media (min-width: $tablet-screen) {
+  .slider__smile-action {
+    left: 75%;
+    top: 62%;
+  }
+
+  .slider__close {
+    left: 45%;
+  }
+}
+
+@media (min-width: $desktop-screen) {
+  .slider__smile-action {
+    top: 75%;
+    left: 78%;
+  }
+
+  .slider__close {
+    left: 46%;
+    top: 7%;
+  }
+}
+
+
+@media (min-width: $desktop-screen) {
+  .slider {
+    height: 40rem;
+  }
+
+  .slider__navigation {
+    .rotator {
+      bottom: .4rem;
+    }
+    .rotator__disc {
+      width: .5rem;
+      height: .5rem;
+    }
+  }
+}
+
+// Overide defaults of react-modal
+.slider__base {
+  all: unset;
+
+  .slider {
+    background: $main-blue;
+    top: 100px;
+    @media (min-width: $tablet-screen) {
+      width: 70%;
+      height: 55rem;
+      left: 50%;
+      top: 20%;
+      transform: translate(-50%, 20%);
+    }
+
+    @media (min-width: $desktop-screen) {
+      height: 65rem;
+    }
+  }
+}
+
+
+.slider__overlay {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  background-color: #4c4c4c;
+}
+
+.ReactModal__Body--open {
+  overflow: hidden;
+}
+
+div.non-stretching-img {
+  width: 100%;
+  height: 100%;
+  display: none;
+
+  &.active-slide {
+    display: block;
+  }
+}

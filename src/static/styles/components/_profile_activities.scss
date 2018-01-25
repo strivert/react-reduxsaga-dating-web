@@ -1,0 +1,71 @@
+@import "profile_activity";
+
+.activities-wrapper {
+  margin-top: 3.2rem;
+
+  .activities__btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 5.6rem;
+    background-color: $border-blue;
+    cursor: pointer;
+    margin-left: 1rem;
+
+    p {
+      margin: 0;
+      font-weight: 500;
+      color: $main-blue;
+    }
+
+    &:active {
+      background-color: darken($border-blue, 10%);
+    }
+  }
+}
+
+.profile__activities {
+  margin-left: 1rem;
+
+  h2 {
+    margin: 0;
+    font-size: 2rem;
+    font-weight: bold;
+    color: $main-blue;
+    line-height: 2.4rem;
+  }
+}
+
+@media (min-width: $tablet-screen) {
+  .activities-wrapper {
+    margin-top: 0;
+  }
+
+  .profile__activities {
+    h2 {
+      font-size: 2.4rem;
+      line-height: 2.8rem;
+    }
+  }
+}
+
+@media (min-width: $desktop-screen) {
+  .activities-wrapper {
+    position: relative;
+
+    .activities__btn {
+      position: absolute;
+      bottom: -5.5rem;
+      width: 100%;
+      box-shadow: 0 4px 12px 0 rgba(0,75,121,0.07);
+    }
+  }
+  .profile__activities {
+    width: 100%;
+
+    .box-wrapper {
+      padding-top: 0.5rem;
+      box-shadow: 0 4px 12px 0 rgba(0,75,121,0.07);
+    }
+  }
+}

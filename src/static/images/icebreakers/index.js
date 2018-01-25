@@ -1,0 +1,15 @@
+export { default as ArrowHeart } from './arrowheart.svg';
+export { default as Balloon } from './balloon.svg';
+export { default as BeatingHeart } from './beatingheart.svg';
+export { default as Bouquet } from './bouquet.svg';
+export { default as Heart } from './heart.svg';
+export { default as HeartEyes } from './hearteyes.svg';
+export { default as Kiss } from './kiss.svg';
+export { default as MessageHeart } from './messageheart.svg';
+export { default as PinkFlower } from './pinkflower.svg';
+export { default as RedFlower } from './redflower.svg';
+export { default as Smile } from './smile.svg';
+export { default as SunFlower } from './sunflower.svg';
+export { default as TwoHearts } from './twohearts.svg';
+export { default as Unicorn } from './unicorn.svg';
+export { default as YellowFlower } from './yellowflower.svg';

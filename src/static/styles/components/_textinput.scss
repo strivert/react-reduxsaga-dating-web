@@ -1,0 +1,20 @@
+.input {
+  border: 0;
+  box-sizing: content-box;
+  background: none;
+  width: 100%;
+  margin-top: 1.5rem;
+  color: $text-blue;
+  outline: none;
+  border-bottom: 0.2rem  $main-blue solid;
+  font-size: 1.6rem;
+  padding: .8rem 0 .8rem .2rem;
+
+  &::-webkit-input-placeholder {
+    color: $text-blue;
+  }
+  
+  &:focus {
+    border-bottom: 0.01rem $text-blue solid;
+  }
+}
