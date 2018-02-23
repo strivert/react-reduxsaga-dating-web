@@ -1,5 +1,35 @@
 # Catholic Singles Client Application
 
+![proto](https://content.screencast.com/users/prageer/folders/Default/media/b17942ca-0493-4f77-ad86-8a95fda9cccb/catholicsingles.png)
+
+## Following technologies are used
+- axios
+- babel
+- express
+- bcryptjs
+- mongoose
+- react
+- react-router-dom
+- react-select
+- recompose
+- react-addons-css-transition-group
+- immutable
+- redux
+- redux-saga
+- redux-immutable
+- materializecss
+- react-hot-loader
+- webpack
+- webpack-dev-server
+- style-loader
+- css-loader
+
+## Prerequisites
+
+- Node.js 6^
+- npm 3^
+- MongoDB 3^
+
 ## Running in development
 
 ```
