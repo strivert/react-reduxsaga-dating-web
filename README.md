@@ -16,6 +16,7 @@
 - immutable
 - redux
 - redux-saga
+- recompose
 - redux-immutable
 - materializecss
 - react-hot-loader
