@@ -12,7 +12,7 @@
     "eject": "react-scripts eject"
   },
   "dependencies": {
-    "axios": "^0.17.0",
+    "axios": "^0.21.1",
     "braintree-dropin-react": "^0.0.2",
     "braintree-web-drop-in": "^1.9.2",
     "classnames": "^2.2.5",
